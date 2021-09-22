@@ -66,6 +66,26 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+		    <plugin>
+		      <groupId>io.openapitools.swagger</groupId>
+		      <artifactId>swagger-maven-plugin</artifactId>
+		      <configuration>
+			<resourcePackages>
+			  <resourcePackage>*</resourcePackage>
+			</resourcePackages>
+			<outputDirectory>${basedir}/src/main/resource/</outputDirectory>
+			<outputFilename>swagger</outputFilename>
+			<outputFormats>JSON,YAML</outputFormats>
+			<prettyPrint>true</prettyPrint>
+		      </configuration>
+		      <executions>
+			<execution>
+			  <goals>
+			    <goal>generate</goal>
+			  </goals>
+			</execution>
+		      </executions>
+		    </plugin>
 		</plugins>
 	</build>
 
