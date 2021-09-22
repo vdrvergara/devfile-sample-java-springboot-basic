@@ -71,7 +71,7 @@
 		      <artifactId>swagger-maven-plugin</artifactId>
 		      <configuration>
 			<resourcePackages>
-			  <resourcePackage>*</resourcePackage>
+			  <resourcePackage>org.wisdom.tool</resourcePackage>
 			</resourcePackages>
 			<outputDirectory>${basedir}/src/main/resource/</outputDirectory>
 			<outputFilename>swagger</outputFilename>
